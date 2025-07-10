@@ -1,0 +1,11 @@
+docker container ls -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES
+a5ab255580f2   ubuntu    "bash"    17 minutes ago   Exited (0) 5 seconds ago             distracted_napier
+
+docker start -i distracted_napier
+
+curl -sL https://deb.nodesource.com/setup_16.x | bash
+apt install -y nodejs
+
+node /usr/src/app/index.js     
+Hello World
